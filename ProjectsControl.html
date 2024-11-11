@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnTheAir CG - Controle de Lower Thirds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OnTheAir CG - Controle de Lower Thirds</h1>
+
+        <!-- Seção de status da conexão com a API -->
+        <div id="apiStatus" class="status-section">
+            <p>Status da conexão com a API: <span id="connectionStatus">Conectando...</span></p>
+        </div>
+
+        <!-- Formulário para adicionar conteúdo -->
+        <div class="add-content-section">
+            <label for="newContentTitle">Insira um título para o Conteúdo:</label>
+            <input type="text" id="newContentTitle" placeholder="Exemplo: Insira o nome do programa ou do material que será executado">
+            <button id="addContentBtn">Adicionar Conteúdo</button>
+        </div>
+
+        <!-- Container para os conteúdos adicionados -->
+        <div id="contentsContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

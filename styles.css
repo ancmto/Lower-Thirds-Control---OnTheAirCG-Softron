@@ -1,0 +1,296 @@
+/* Reset de estilos padrões do navegador */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 60;
+    padding: 0;
+}
+
+/* Container principal com limite de largura */
+.container {
+    max-width: 1280px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal da página */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+/* Estilo para as seções de conteúdo */
+.template-title,
+.lower-thirds,
+.add-template-section{
+    margin-bottom: 20px;
+}
+
+.add-content-section {
+    display: flex;              /* Usa Flexbox */
+    flex-direction: row;        /* Organiza os itens na horizontal (lado a lado) */
+    justify-content: center;    /* Alinha os itens horizontalmente no centro */
+    align-items: center;        /* Alinha os itens verticalmente no centro */
+    margin-bottom: 20px;        /* Espaço abaixo da seção */
+    width: 100%;                /* Garante que a div ocupe 100% da largura disponível */
+    background-color:   #eeeeee;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+
+
+.add-content-section label {
+    display: block;
+    align-items: center;  /* Alinha o conteúdo verticalmente no centro */
+    justify-content: left; /* Alinha o conteúdo à esquerda */
+    width: 420px;
+    margin-right: 12px;
+    margin-left: 12px;
+    text-align: left;
+
+}
+
+.add-content-section button {
+    width: 400px;
+}
+
+
+.control-buttons {
+    display: block;
+}
+
+/* Estilos de rótulos (labels) */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #333;
+}
+
+/* Estilos dos campos de entrada de texto e selects */
+input, select {
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 12px;
+    
+}
+
+/* Estilos gerais de botões */
+button, #addContentBtn, #addTemplateBtn {
+    padding: 10px 15px;
+    border: 1px solid #0056b3;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+/* Cores padrão dos botões */
+button, #addContentBtn, #addTemplateBtn {
+    background-color: #007bff;
+}
+
+/* Efeito de hover para botões */
+button:hover, #addContentBtn:hover, #addTemplateBtn:hover {
+    background-color: #034c9a;
+
+}
+/* Estilo específico para o botão de "Iniciar" */
+button#start-btn {
+    background-color: #245026;
+    border: none;
+}
+
+button#start-btn:hover {
+    background-color: #45a049;
+}
+
+/* Estilo específico para o botão de "Pausar" */
+button#pause-btn {
+    background-color: #beaa18;
+    border: none;
+}
+
+button#pause-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Estilo específico para o botão de "Parar" */
+button#stop-btn {
+    background-color: #F44336;
+    border: none;
+}
+
+button#stop-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+
+/* Estilo específico para o botão de "Parar" */
+button#remove-btn {
+    background-color: #424242;
+    border: none;
+}
+
+button#remove-btn:hover {
+    background-color: #7f7f7f;
+}
+
+
+button#remove-btn-content {
+    background-color: #424242;
+    border: none;
+}
+
+button#remove-btn-content:hover {
+    background-color: #7f7f7f;
+}
+
+/* Estilos para os blocos de conteúdo e projetos */
+.content-block, .project-block, .template-block {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #f3f3f3;
+    
+}
+
+/* Botão de remover conteúdo ao lado do título */
+.content-block h2 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Botão de remover conteúdo ao lado do título */
+
+.content-block .remove-btn-content {
+    margin-left: 10px;
+}
+
+
+
+
+
+/* Estilo para os formulários de projetos */
+.select-project {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    display: flex;
+
+
+}
+
+.select-project label {
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.select-project select {
+    width: 300px;
+    padding: 5px;
+    margin-right: 12px;
+}
+
+.select-project button {
+    padding: 5px 20px;
+    cursor: pointer;
+}
+/* Layout responsivo para telas pequenas */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Estilo para a exibição do nome do projeto e botões de controle */
+#projectDetails {
+    margin-top: 20px;
+}
+
+.project-name {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+button.control-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button.control-btn:hover {
+    opacity: 0.8;
+}
+/* Estilo para o formulário do projeto */
+.project-form {
+    display: flex;             /* Usa flexbox para organizar os itens na horizontal */
+    flex-direction: row;       /* Organiza os itens em linha (lado a lado) */
+    align-items: center;       /* Alinha os itens verticalmente ao centro */
+    gap: 10px;                 /* Espaço entre os itens */
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo do label */
+.project-form label {
+    width: 180px; 
+    font-weight: bold;
+    margin-right: 10px;        /* Espaço entre o label e o input */
+    color: #333;
+}
+
+/* Estilo do input */
+.project-form input {
+              /* O input ocupa toda a largura restante */
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/* Estilo para a seção do projeto */
+.project-header {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+.project-header h2 {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Botão de remover projeto ao lado do título */
+.project-header .remove-btn-project {
+    margin-right: 10px;
+}
