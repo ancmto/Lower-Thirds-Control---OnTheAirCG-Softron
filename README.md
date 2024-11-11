@@ -1,73 +1,89 @@
 # OnTheAir CG - Lower Thirds Control
 
-Este projeto fornece uma interface simples para controlar os **Lower Thirds** em uma emissora de televisão, integrando com a API **REST** do **OnTheAir CG** da Softron. Ele permite exibir tarjas sem a necessidade de usar o software, facilitando o processo de edição de projetos e exibição de conteúdo em tempo real.
+## Description
+
+This project provides a user interface to manage lower thirds in a broadcast setting, integrating with the OnTheAir CG system. The user can add content, associate projects, and control lower thirds (e.g., start, pause, stop, and remove) from the web interface. This project is built using HTML, CSS, and JavaScript, storing the state in the browser's local storage for persistence.
+
+## Features
+
+- **Add Content**: Allows users to add content to be displayed as lower thirds.
+- **Project Management**: Each content can have associated projects, and users can control them.
+- **Control Lower Thirds**: Users can control the state of the lower thirds (start, pause, stop, and remove).
+- **Persistent State**: The state of the content and projects is saved in local storage to persist across page reloads.
+
+## Setup
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/OnTheAir-CG-LowerThirds-Control.git
+   ```
+
+2. Open the `index.html` file in your browser.
+
+3. Edit the `styles.css` and `script.js` files as needed.
+
+## Usage
+
+1. **Add New Content**: Enter a title for your content and click "Add Content."
+2. **Add Projects to Content**: After adding content, you can add projects to it using the dropdown. 
+3. **Control Lower Thirds**: For each project, you can start, pause, stop, or remove it from the list.
+
+## Local Storage
+
+The state of the application (contents and associated projects) is saved to `localStorage` so that when you reload the page, your data is preserved.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+# OnTheAir CG - Controle de Lower Thirds
+
+## Descrição
+
+Este projeto fornece uma interface para gerenciar lower thirds em um ambiente de transmissão, integrando com o sistema OnTheAir CG. O usuário pode adicionar conteúdos, associar projetos e controlar os lower thirds (ex: iniciar, pausar, parar e remover) pela interface web. Este projeto foi desenvolvido utilizando HTML, CSS e JavaScript, e armazena o estado no armazenamento local do navegador para persistência.
 
 ## Funcionalidades
 
-- **Conexão com a API**: Exibe o status da conexão com a API do OnTheAir CG.
-- **Adicionar Conteúdo**: Permite adicionar títulos de conteúdos para visualização.
-- **Adicionar Projetos**: Oferece um formulário para associar projetos aos conteúdos e controlar sua execução.
-- **Controle de Lower Thirds**: Permite iniciar, pausar, parar e remover Lower Thirds de forma interativa.
-- **Persistência de Estado**: O estado da página é salvo localmente no navegador, permitindo que as alterações sejam mantidas entre sessões.
+- **Adicionar Conteúdo**: Permite aos usuários adicionar conteúdo para exibição como lower thirds.
+- **Gerenciamento de Projetos**: Cada conteúdo pode ter projetos associados, e os usuários podem controlá-los.
+- **Controle de Lower Thirds**: Os usuários podem controlar o estado dos lower thirds (iniciar, pausar, parar e remover).
+- **Estado Persistente**: O estado dos conteúdos e projetos é salvo no armazenamento local para persistir entre recarregamentos da página.
+
+## Configuração
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/yourusername/OnTheAir-CG-LowerThirds-Control.git
+   ```
+
+2. Abra o arquivo `index.html` no seu navegador.
+
+3. Edite os arquivos `styles.css` e `script.js` conforme necessário.
+
+## Uso
+
+1. **Adicionar Novo Conteúdo**: Insira um título para o seu conteúdo e clique em "Adicionar Conteúdo".
+2. **Adicionar Projetos ao Conteúdo**: Após adicionar o conteúdo, você pode adicionar projetos a ele usando o dropdown.
+3. **Controlar Lower Thirds**: Para cada projeto, você pode iniciar, pausar, parar ou removê-lo da lista.
+
+## Armazenamento Local
+
+O estado da aplicação (conteúdos e projetos associados) é salvo no `localStorage` para que, ao recarregar a página, seus dados sejam preservados.
 
 ## Tecnologias Usadas
 
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla)**
-- **Local Storage** para persistência de dados
-
-## Como Usar
-
-1. **Clone este repositório:**
-
-   ```bash
-   git clone https://github.com/seu-usuario/otacg-lower-thirds.git
-   ```
-
-2. **Abra o arquivo `index.html` no seu navegador.**
-
-3. **Adicione títulos de conteúdos** e associe **projetos** aos conteúdos usando o formulário disponível na interface.
-
-4. **Controle os Lower Thirds**: Inicie, pause, pare ou remova o conteúdo com os botões de controle.
-
-## Estrutura do Projeto
-
-```plaintext
-/otacg-lower-thirds
-│
-├── index.html        # Página principal com a interface
-├── styles.css        # Estilos do projeto
-├── script.js         # Lógica JavaScript para controle de Lower Thirds
-└── README.md         # Este arquivo
-```
-
-## Funcionalidade Detalhada
-
-### 1. **Adicionar Conteúdo**
-   - Insira um título e clique em "Adicionar Conteúdo". O conteúdo será exibido na tela.
-
-### 2. **Adicionar Projeto**
-   - Para cada conteúdo, você pode adicionar um projeto. Após selecionar um projeto, você pode controlar a execução dele.
-
-### 3. **Controle de Lower Thirds**
-   - **Iniciar**: Começa a exibição do Lower Third.
-   - **Pausar**: Pausa a exibição do Lower Third.
-   - **Parar**: Finaliza a exibição do Lower Third.
-   - **Remover**: Remove o conteúdo ou projeto da lista.
-
-### 4. **Persistência de Dados**
-   - O estado de todos os conteúdos e projetos é salvo automaticamente no **Local Storage** do navegador. Isso garante que os dados sejam mantidos mesmo após a atualização da página.
-
-## Exemplo de Uso
-
-1. Abra a página e insira um título no campo "Insira um título para o Conteúdo".
-2. Adicione um projeto ao conteúdo inserido e controle os Lower Thirds com os botões "Iniciar", "Pausar", "Parar" ou "Remover".
-
-## Personalização
-
-- **Projetos**: Atualmente, os projetos são predefinidos como "Projeto 1", "Projeto 2", e "Projeto 3". Você pode personalizar esses valores diretamente no código ou implementar uma forma de adicionar projetos dinamicamente.
+- HTML
+- CSS
+- JavaScript
 
 ## Licença
 
-Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto é licenciado sob a Licença MIT.
